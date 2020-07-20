@@ -16,6 +16,7 @@ To see all the available training (hyper)parameters use:
 
 Available SDNet variants:
 1. Original architecture - UNet to encode anatomy in spatial latent variable (Variant A)
+
 ..* Gumbel Softmax is used instead of the binarization module for the UNet output --> smoother Dice loss convergence and a 3% increase in the validation accuracy
 2. A VAE is used to encode the anatomy in a vector latent space (Variant B)
 3. A VAE is used to re-encode the spatial output of the UNet - VAE output is used by the segmentor and the decoder (Variant C)
