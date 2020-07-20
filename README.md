@@ -20,3 +20,24 @@ Available SDNet variants:
 2. A VAE is used to encode the anatomy in a vector latent space (Variant B)
 3. A VAE is used to re-encode the spatial output of the UNet - VAE output is used by the segmentor and the decoder (Variant C)
 4. A VAE is used to re-encode the spatial output of the UNet - VAE output is used only by the segmentor, while the decoder uses UNet output(Variant D)
+
+## SDNet architecture - Variant A
+
+
+## SDNet architecture - Variant B
+
+
+## SDNet architecture - Variant C
+
+
+## SDNet architecture - Variant D
+
+
+## To Do
+Since this is an "in-progress" repository there are some more stuff to be added:
+* A combined test script
+* A script to visualize anatomy channels and modality (style) traversals of any model
+* Add SPADE decoder implementation (now only AdaIN is available)
+
+## Acknowledgements
+Thank you [Agis85](https://github.com/agis85/anatomy_modality_decomposition) for the discussions and the original (Keras) implementation. Also thanks [Naoto Inoue](https://github.com/naoto0804) for the PyTorch implementation of the AdaIN module. 
