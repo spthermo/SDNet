@@ -22,13 +22,13 @@ Available SDNet variants:
 3. A VAE is used to re-encode the spatial output of the UNet - VAE output is used by the segmentor and the decoder (Variant C)
 
 ## SDNet architecture - Variant A
-![sdnet](./misc/images/sdnet.png) { width: 200px; }
+<img src="./misc/images/sdnet.png" width="650">
 
 ## SDNet architecture - Variant B
-![alt text](https://github.com/spthermo/SDNet/blob/master/misc/images/sdnet2.png "SDNet-VAE-anatomy")
+<img src="./misc/images/sdnet2.png width="650">
 
 ## SDNet architecture - Variant C
-![alt text](https://github.com/spthermo/SDNet/blob/master/misc/images/sdnet3.png "SDNet-UNet+VAE-anatomy")
+<img src="./misc/images/sdnet3.png width="650">
 
 
 ## To Do
