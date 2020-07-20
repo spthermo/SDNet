@@ -26,6 +26,7 @@ Available SDNet variants:
 ### SDNet architecture - Variant A
 <img src="./misc/images/sdnet.png" width="750">
 Train the original SDNet model for 60 epochs and batch size 10 using:
+
 ```
 python main.py --model_name sdnet --epochs 60 --batch_size 10 --data_path /path/to/ACDC/data --name visdom_experiment_name --visdom
 ```
@@ -33,6 +34,7 @@ python main.py --model_name sdnet --epochs 60 --batch_size 10 --data_path /path/
 ### SDNet architecture - Variant B
 <img src="./misc/images/sdnet2.png" width="650">
 Train the 2-VAE SDNet model for 60 epochs and batch size 10 using:
+
 ```
 python main.py --model_name sdnet2 --epochs 60 --batch_size 10 --data_path /path/to/ACDC/data --name visdom_experiment_name --visdom
 ```
@@ -40,6 +42,7 @@ python main.py --model_name sdnet2 --epochs 60 --batch_size 10 --data_path /path
 ### SDNet architecture - Variant C
 <img src="./misc/images/sdnet3.png" width="750">
 Train the UNet+VAE SDNet model for 60 epochs and batch size 10 using:
+
 ```
 python main.py --model_name sdnet3 --epochs 60 --batch_size 10 --data_path /path/to/ACDC/data --name visdom_experiment_name --visdom
 ```
