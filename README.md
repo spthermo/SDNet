@@ -50,6 +50,7 @@ python main.py --model_name sdnet3 --epochs 60 --batch_size 10 --data_path /path
 
 ## To Do
 Since this is an "in-progress" repository there are some more stuff to be added:
+* Report some preliminary results on ACDC test set
 * A combined test script
 * A script to visualize anatomy channels and modality (style) traversals of any model
 * Add SPADE decoder implementation (now only AdaIN is available)
