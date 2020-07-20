@@ -39,7 +39,7 @@ Train the 2-VAE SDNet model for 60 epochs and batch size 10 using:
 python main.py --model_name sdnet2 --epochs 60 --batch_size 10 --data_path /path/to/ACDC/data --name visdom_experiment_name --visdom
 ```
 
-### SDNet architecture - Variant C (13.8M parameters)
+### SDNet architecture - Variant C (37.2M parameters)
 <img src="./misc/images/sdnet3.png" width="750">
 Train the UNet+VAE SDNet model for 60 epochs and batch size 10 using:
 
