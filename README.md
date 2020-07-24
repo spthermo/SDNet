@@ -28,7 +28,7 @@ Available SDNet variants:
 Train the original SDNet model for 60 epochs and batch size 10 using:
 
 ```
-python main.py --model_name sdnet --epochs 60 --batch_size 10 --data_path /path/to/ACDC/data --name visdom_experiment_name --visdom
+python main.py --model_name sdnet --epochs 60 --batch_size 10 --data_path /path/to/ACDC/data --name visdom_experiment_name --visdom --gpu gpu_id
 ```
 
 ### SDNet architecture - Variant B (8.7M parameters)
@@ -36,7 +36,7 @@ python main.py --model_name sdnet --epochs 60 --batch_size 10 --data_path /path/
 Train the 2-VAE SDNet model for 60 epochs and batch size 10 using:
 
 ```
-python main.py --model_name sdnet2 --epochs 60 --batch_size 10 --data_path /path/to/ACDC/data --name visdom_experiment_name --visdom
+python main.py --model_name sdnet2 --epochs 60 --batch_size 10 --data_path /path/to/ACDC/data --name visdom_experiment_name --visdom --gpu gpu_id
 ```
 
 ### SDNet architecture - Variant C (37.2M parameters)
@@ -44,9 +44,17 @@ python main.py --model_name sdnet2 --epochs 60 --batch_size 10 --data_path /path
 Train the UNet+VAE SDNet model for 60 epochs and batch size 10 using:
 
 ```
-python main.py --model_name sdnet3 --epochs 60 --batch_size 10 --data_path /path/to/ACDC/data --name visdom_experiment_name --visdom
+python main.py --model_name sdnet3 --epochs 60 --batch_size 10 --data_path /path/to/ACDC/data --name visdom_experiment_name --visdom --gpu gpu_id
 ```
 
+## Test
+To test the original SDNet model using the ACDC test set samples use the following command:
+
+```
+python test.py --model_name sdnet --data_path /path/to/ACDC/data --load_weights checkpoints/path/to/saved_model_weights --gpu gpu_id
+```
+
+Note that this script will save the anatomy factors of each sample under the ```factors``` directory.
 
 ## To Do
 Since this is an "in-progress" repository there are some more stuff to be added:
