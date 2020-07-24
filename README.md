@@ -57,7 +57,7 @@ python test.py --model_name sdnet --data_path /path/to/ACDC/data --load_weights 
 Note that this script will save the anatomy factors of each sample under the ```factors``` directory.
 
 ## Results
-The following Table reports the results of the 3 variants on the ACDC test set.
+The following Table reports the results of the 3 variants on the ACDC test set. Note that all models were trained only on Split 0 of the training set for this proof-of-concept experiment.
 
 |              |  Variant A | Variant B | Variant C |
 |:------------:|:----------:|:---------:|:---------:|
