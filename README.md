@@ -59,8 +59,7 @@ Note that this script will save the anatomy factors of each sample under the ```
 ## To Do
 Since this is an "in-progress" repository there are some more stuff to be added:
 * Report some preliminary results on ACDC test set
-* A combined test script
-* A script to visualize anatomy channels and modality (style) traversals of any model
+* A script to perform modality (style) traversals of any model
 * Add SPADE decoder implementation (now only AdaIN is available)
 
 ## Acknowledgements
