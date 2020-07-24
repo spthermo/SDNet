@@ -56,6 +56,18 @@ python test.py --model_name sdnet --data_path /path/to/ACDC/data --load_weights 
 
 Note that this script will save the anatomy factors of each sample under the ```factors``` directory.
 
+## Results
+The following Table reports the results of the 3 variants on the ACDC test set.
+
+|              |  Variant A | Variant B | Variant C |
+|:------------:|:----------:|:---------:|:---------:|
+|  Dice Score  |    **0.78**    |   0.48    |    0.36   |
+
+The following examples are anatomy factors encoded by the SDNet variant A model:
+<img src="./misc/images/anatomy_factor_1.png" width="650">
+<img src="./misc/images/anatomy_factor_2.png" width="650">
+<img src="./misc/images/anatomy_factor_3.png" width="650">
+
 ## To Do
 Since this is an "in-progress" repository there are some more stuff to be added:
 * Report some preliminary results on ACDC test set
