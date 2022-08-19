@@ -320,9 +320,10 @@ class SDNet3(nn.Module):
         z_out, mu_out, logvar_out = self.m_encoder(a_out, x)
         if script_type == 'training':
             reco = self.decoder(a_out_spatial, z_out)
-            _, mu_out_tilde, _ = self.m_encoder(a_out_spatial, x)
+            a_out_spatial_tilde = self.a_encoder(reco)
+            _, mu_out_tilde, _ = self.m_encoder(a_out_spatial_tilde, reco)
         else:
             reco = self.decoder(a_out_spatial, mu_out)
             mu_out_tilde = mu_out #dummy assignment, not needed during validation
 
-        return reco, z_out, mu_out_tilde, mu_out_tilde, a_out, seg_pred, mu_out, logvar_out, a_mu_out, a_logvar_out
+        return reco, z_out, mu_out_tilde, a_out_spatial_tilde, a_out, seg_pred, mu_out, logvar_out, a_mu_out, a_logvar_out
